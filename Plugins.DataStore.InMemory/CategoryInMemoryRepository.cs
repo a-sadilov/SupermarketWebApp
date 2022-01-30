@@ -32,7 +32,11 @@ namespace Plugins.DataStore.InMemory
         public void UpdateCategory(Category category)
         {
             var categorytoUpdate = GetCategoryById(category.CategoryId);
-            if (categorytoUpdate != null) categorytoUpdate = category;
+            if (categorytoUpdate != null)
+            {
+                categorytoUpdate.Name = category.Name;
+                categorytoUpdate.Description = category.Description;
+            }
         }
         public IEnumerable<Category> GetCategories()
         {
