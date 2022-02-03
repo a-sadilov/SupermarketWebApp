@@ -15,9 +15,9 @@ namespace Plugins.DataStore.InMemory
 
             this.categories = new List<Category>()
             {
-                new Category { CategoryId = 1, Name ="Beverage", Description = "Beverage Description"},
+                new Category { CategoryId = 1, Name ="Drinks", Description = "Beverage Description"},
                 new Category { CategoryId = 2, Name ="Bekery", Description = "Bekery Description"},
-                new Category { CategoryId = 3, Name ="Meat", Description = "Meat Description"}
+                new Category { CategoryId = 3, Name ="Cheese", Description = "Meat Description"}
             };
         }
 
