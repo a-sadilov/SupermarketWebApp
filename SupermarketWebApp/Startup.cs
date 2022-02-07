@@ -13,6 +13,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using UseCases;
 using UseCases.DataStorePluginInterfaces;
+using UseCases.ProductsUseCases;
+using UseCases.UseCaseInterfaces;
 
 namespace SupermarketWebApp
 {
@@ -44,6 +46,10 @@ namespace SupermarketWebApp
             services.AddTransient<IDeleteCategoryUseCase, DeleteCategoryUseCase>();
             services.AddTransient<IViewProductsUseCase, ViewProductsUseCase>();
             services.AddTransient<IAddProductUseCase, AddProductUseCase>();
+            services.AddTransient<IEditProductUseCase, EditProductUseCase>();
+            services.AddTransient<IGetProductByIdUseCase, GetProductByIdUseCase>();
+            services.AddTransient<IDeleteProductUseCase, DeleteProductUseCase>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

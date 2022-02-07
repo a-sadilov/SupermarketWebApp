@@ -40,10 +40,33 @@ namespace Plugins.DataStore.InMemory
             }
             products.Add(product);
         }
+        public void UpdateProduct(Product product)
+        {
+            var productToUpdate = GetProductById(product.CategoryId.Value);
+            if (productToUpdate != null)
+            {
+                productToUpdate.Name = product.Name;
+                productToUpdate.CategoryId = product.CategoryId;
+                productToUpdate.Price = product.Price;
+                productToUpdate.Quantity = product.Quantity;
+            }
+        }
+    
 
         public IEnumerable<Product> GetProducts()
         {
             return products;
+        }
+        public Product GetProductById(int productId)
+        {
+            return products?.FirstOrDefault(x => x.ProductId == productId);
+
+        }
+
+        public void DeleteProduct(int productId)
+        {
+            var productToDelete = GetProductById(productId);
+            if( productToDelete != null ) products.Remove(GetProductById(productId));
         }
     }
 }
