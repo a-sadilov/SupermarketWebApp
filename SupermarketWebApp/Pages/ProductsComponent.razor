@@ -17,7 +17,6 @@
                 <th>Price</th>
                 <th>Quantity</th>
                 <th></th>
-                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -28,8 +27,10 @@
                     <td>@product.Name</td>
                     <td>@Math.Round(product.Price.Value, 2)</td>
                     <td>@product.Quantity.Value</td>
-                    <td><button type="button" class="btn btn-primary" @onclick="(() => EditProduct(product))">Edit</button></td>
-                    <td><button type="button" class="btn btn-primary" @onclick="(() => DeleteProduct(product.ProductId))">Delete</button></td>
+                    <td>
+                    <button type="button" class="btn btn-primary" @onclick="(() => EditProduct(product))">Edit</button>
+                    <button type="button" class="btn btn-primary" @onclick="(() => DeleteProduct(product.ProductId))">Delete</button>
+                    </td>
                 </tr>
             }
         </tbody>
