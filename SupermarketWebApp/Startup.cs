@@ -2,10 +2,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Plugins.DataStore.InMemory;
+using Plugins.DataStore.SQL;
 using SupermarketWebApp.Data;
 using System;
 using System.Collections.Generic;
@@ -33,7 +35,12 @@ namespace SupermarketWebApp
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddSingleton<WeatherForecastService>();
+
+            services.AddDbContext<MarketContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+            });
+
             //Dependency Injection for In-Memory Data Store
             services.AddScoped<ICategoryRepository, CategoryInMemoryRepository>();
             services.AddScoped<IProductRepository, ProductInMemoryRepository>();
@@ -54,6 +61,7 @@ namespace SupermarketWebApp
             services.AddTransient<ISellProductUseCase, SellProductUseCase>();
             services.AddTransient<IRecordTransactionUseCase, RecordTransactionUseCase>();
             services.AddTransient<IGetTodayTransactionsUseCase, GetTodayTransactionsUseCase>();
+            services.AddTransient<IGetTransactionsUseCase, GetTransactionsUseCase>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
