@@ -42,9 +42,14 @@ namespace SupermarketWebApp
             });
 
             //Dependency Injection for In-Memory Data Store
-            services.AddScoped<ICategoryRepository, CategoryInMemoryRepository>();
+            /*services.AddScoped<ICategoryRepository, CategoryInMemoryRepository>();
             services.AddScoped<IProductRepository, ProductInMemoryRepository>();
-            services.AddScoped<ITransactionRepository, TransactionInMemoryRepository>();
+            services.AddScoped<ITransactionRepository, TransactionInMemoryRepository>();*/
+
+            //Dependency Injection for EF Core Data Store for SQL
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<ITransactionRepository, TransactionRepository>();
 
             //Dependency Injection for Use Cases and Repositories
             services.AddTransient<IViewCategoriesUseCase, ViewCategoriesUseCase>();
@@ -62,6 +67,7 @@ namespace SupermarketWebApp
             services.AddTransient<IRecordTransactionUseCase, RecordTransactionUseCase>();
             services.AddTransient<IGetTodayTransactionsUseCase, GetTodayTransactionsUseCase>();
             services.AddTransient<IGetTransactionsUseCase, GetTransactionsUseCase>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
