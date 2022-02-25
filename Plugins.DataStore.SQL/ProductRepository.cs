@@ -49,7 +49,7 @@ namespace Plugins.DataStore.SQL
 
         public void UpdateProduct(Product product)
         {
-            var prod = db.Products.Find(product.CategoryId);
+            var prod = db.Products.Find(product.ProductId);
             prod.CategoryId = product.CategoryId;
             prod.Name = product.Name;
             prod.Price = product.Price;
