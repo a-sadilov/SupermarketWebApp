@@ -64,6 +64,11 @@ ___
 <source src="video/demo.mp4" type="video/mp4">
 </video>
 
+<a href="video/demo.mp4" style="display: block; width: 500px; height: 300px;" id="player"></a>
+<script type="text/javascript">
+flowplayer("player", "https://github.com/a-sadilov/SupermarketWebApp/Папка_с_плеером/файл_плеера.swf");
+</script>
+
 
 ## Контакты
 
