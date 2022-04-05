@@ -1,8 +1,8 @@
 <br />
 <p align="center">
-<img src="ManagmentApp.png" alt="Logo" width="300" height="120">
+<img src="ManagmentApp.png" alt="Logo" width="460" height="120">
 
-  <h3 align="center">Спортивная социальная сеть</h3>
+  <h3 align="center">Веб-менеджер супермаркета</h3>
 
   <p align="center">
     Это проект, помогающий менеджеру какого-либо магазина управлять его асортиментом онлайн.
