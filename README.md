@@ -7,7 +7,7 @@
   <p align="center">
     Это проект, помогающий менеджеру какого-либо магазина управлять его асортиментом онлайн.
     <br />
-    <a href="https://fatclient.herokuapp.com/"><strong>Посмотреть демо »</strong></a>
+    <!--a href="https://fatclient.herokuapp.com/"><strong>Посмотреть демо »</strong></a-->
     <br />
     <br />
     <a href="https://t.me/bisnachauszuvorbei">Телеграм автора</a>
@@ -23,7 +23,7 @@
         <li><a href="#Технологии">Технологии</a></li>
       </ul>
     </li>
-    <li><a href="#Демонстрация работы">Благодарность</a></li>
+    <li><a href="#Демонстрация работы">Демонстрация работы</a></li>
     <li><a href="#Контакты">Контакты</a></li>
   </ol>
 </details>
