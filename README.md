@@ -11,10 +11,6 @@
     <br />
     <br />
     <a href="https://t.me/bisnachauszuvorbei">Телеграм автора</a>
-    ·
-    <a href="https://github.com/pavelqq/fatAPI">API проекта</a>
-    ·
-    <a href="https://github.com/pavelqq/fat/branches">История коммитов</a>
   </p>
 </p>
 
@@ -60,14 +56,7 @@ ___
 
 ## Демонстрация работы
 
-<video controls>
-<source src="video/demo.mp4" type="video/mp4">
-</video>
-
-<a href="video/demo.mp4" style="display: block; width: 500px; height: 300px;" id="player"></a>
-<script type="text/javascript">
-flowplayer("player", "https://github.com/a-sadilov/SupermarketWebApp/video/KMPlayer%2064X/KMPlayer64.exe");
-</script>
+<a href="https://github.com/a-sadilov/SupermarketWebApp/blob/master/video/demo.mp4">
 
 
 ## Контакты
