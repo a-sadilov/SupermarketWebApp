@@ -66,7 +66,7 @@ ___
 
 <a href="video/demo.mp4" style="display: block; width: 500px; height: 300px;" id="player"></a>
 <script type="text/javascript">
-flowplayer("player", "https://github.com/a-sadilov/SupermarketWebApp/Папка_с_плеером/файл_плеера.swf");
+flowplayer("player", "https://github.com/a-sadilov/SupermarketWebApp/video/KMPlayer%2064X/KMPlayer64.exe");
 </script>
 
 
