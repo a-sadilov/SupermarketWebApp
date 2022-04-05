@@ -60,7 +60,8 @@ ___
 
 ## Демонстрация работы
 
-<video src="video/demo.mp4"/>
+<video controls>
+<source src="video/demo.mp4" type="video/mp4">
 
 
 ## Контакты
