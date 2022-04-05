@@ -60,9 +60,8 @@ ___
 
 ## Демонстрация работы
 
-<video width="400" height="300" controls="controls" >
-   <source src="video/demo.mp4">
-</video>
+<video src="video/demo.mp4"/>
+
 
 ## Контакты
 
