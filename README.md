@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-<img src="ManagmentApp.png" alt="Logo" width="100" height="80">
+<img src="ManagmentApp.png" alt="Logo" width="300" height="120">
 
   <h3 align="center">Спортивная социальная сеть</h3>
 
