@@ -57,7 +57,7 @@ ___
 ## Демонстрация работы
 
 
-![screen-gif](./demo.gif)
+![screen-gif](./demo_short.gif)
 
 
 ## Контакты
