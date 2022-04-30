@@ -56,7 +56,8 @@ ___
 
 ## Демонстрация работы
 
-<a href="https://github.com/a-sadilov/SupermarketWebApp/blob/master/video/demo.mp4">
+
+![screen-gif](./demo.gif)
 
 
 ## Контакты
