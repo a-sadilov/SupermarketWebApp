@@ -59,7 +59,7 @@ ___
 
 ![screen-gif](./demo_short.gif)
 
-
+Полная версия видеофайла демонстрации работы - (./video/demo_short.mp4)
 ## Контакты
 
 Email - [a.sadilov.official@gmail.com](mailto:a.sadilov.official@gmail.com)
